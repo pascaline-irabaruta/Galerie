@@ -74,6 +74,24 @@ class Photo(models.Model):
     @classmethod
     def show_all_photos(cls):
         """
-        A method to return all photos 
+        A method to return all photos
         """
         return cls.objects.order_by("post_date")[::-1]
+
+    @classmethod
+    def show_random_photo(cls):
+        """
+        A method which returns a random photo
+        """
+        all_photos = cls.show_all_photos()
+        random_id = random.randint(1, len(all_photos))
+
+        return cls.objects.get(id = random_id)
+
+    @classmethod
+    def delete_photo(cls, id):
+        """
+        A method to delete an object
+        """
+
+        return cls.objects.filter(id = id).delete()
