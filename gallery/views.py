@@ -20,3 +20,9 @@ def search(request):
     else:
         message = "You have not searched for any photo"
         return render(request, "gallery/search.html", context={"message":message})
+
+def browse(request):
+    photos = Photo.show_all_photos()
+    locations = Location.objects.all()
+    return render(request, "gallery/browse.html", context={"photos":photos,
+                                                           "locations":locations})
