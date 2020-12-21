@@ -65,3 +65,8 @@ class Photo(models.Model):
         A method to save the photo
         """
         return self.save()
+
+    @classmethod
+    def copy_url(cls, id):
+        photo = cls.objects.get(id = id)
+        pyperclip.copy(photo.image.url)
