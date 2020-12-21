@@ -91,7 +91,14 @@ class Photo(models.Model):
     @classmethod
     def delete_photo(cls, id):
         """
-        A method to delete an object
+        A method to delete an photo
         """
 
         return cls.objects.filter(id = id).delete()
+
+    @classmethod
+    def get_photo_by_id(cls, id):
+        """
+        A method to get a photo based on its id
+        """
+        return cls.objects.filter(id = id)[0]
