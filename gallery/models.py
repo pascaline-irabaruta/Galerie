@@ -102,3 +102,10 @@ class Photo(models.Model):
         A method to get a photo based on its id
         """
         return cls.objects.filter(id = id)[0]
+
+    @classmethod
+    def search_photo_by_category(cls, search):
+        """
+        A method to return all photos that fall under a certain catergory
+        """
+        return cls.objects.filter(categories__name__icontains = search)
