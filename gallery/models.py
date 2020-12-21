@@ -106,6 +106,13 @@ class Photo(models.Model):
     @classmethod
     def search_photo_by_category(cls, search):
         """
-        A method to return all photos that fall under a certain catergory
+        A method to return all photos based on catergory
         """
         return cls.objects.filter(categories__name__icontains = search)
+
+    @classmethod
+    def filter_by_location(cls, id):
+        """
+        A method to filter all photos based on the location
+        """
+        return cls.objects.filter(location__id = id)
