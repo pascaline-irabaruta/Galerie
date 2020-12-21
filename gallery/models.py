@@ -70,3 +70,10 @@ class Photo(models.Model):
     def copy_url(cls, id):
         photo = cls.objects.get(id = id)
         pyperclip.copy(photo.image.url)
+
+    @classmethod
+    def show_all_photos(cls):
+        """
+        A method to return all photos 
+        """
+        return cls.objects.order_by("post_date")[::-1]
