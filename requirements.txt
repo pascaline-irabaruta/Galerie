@@ -11,4 +11,5 @@ pyperclip==1.8.1
 pytz==2020.4
 soupsieve==2.1
 sqlparse==0.4.1
+whitenoise==5.2.0
 zipp==3.4.0
