@@ -11,17 +11,17 @@ $(function () {
 
 // function to copy image url to clipboard
 function copyToClipboard(id) {
-    var grabText = document.getElementById(id);
-    var toCreateAttribute = grabText.textContent;
-    console.log(toCreateAttribute);
+    var takeText = document.getElementById(id);
+    var createAttribute = takeText.textContent;
+    console.log(createAttribute);
 
     var inputElement = document.createElement("input");
     document.body.appendChild(inputElement);
-    inputElement.setAttribute("value", toCreateAttribute);
+    inputElement.setAttribute("value", createAttribute);
     inputElement.select();
     inputElement.setSelectionRange(0, 99999);
     document.execCommand("copy");
-    alert("Image url copied");
+    alert("Image url copied to clipboard");
     inputElement.setAttribute("hidden", true);
     document.removeChild(inputElement);
   }
