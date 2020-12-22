@@ -9,7 +9,7 @@ background-size: cover;position:relative;padding-bottom:15%;padding-top:15%">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
         <div class="site-heading">
-          <h3 class="subheading" style="font-size:20px;"><span style="font-family: 'Langar', cursive;"> Welcome To </span><span style="font-family: 'Megrim', cursive;font-weight:bold">GALERIE</span></h3>
+          <h3 class="subheading" style="font-size:20px;"><span style="font-family: 'Langar', cursive;"> Welcome To </span><span style="font-family: 'Nosifer', cursive;font-weight:bold">GALERIE</span></h3>
           <a href="#pts" style="margin-left:10%;color:black;margin-top:20%;"><i class="fas fa-angle-double-down"></i></a>
         </div>
       </div>
@@ -25,6 +25,7 @@ background-size: cover;position:relative;padding-bottom:15%;padding-top:15%">
                     <img  class="img-fluid image" src="{{photo.image.url}}">
 <!-- {{photo.image.cdn_url}} -->
                 </a>
+
                 <div class="modal fade bd-example-modal-lg" id="{{photo.id}}" tabindex="1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="background-color:transparent;">
                   <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
@@ -35,7 +36,7 @@ background-size: cover;position:relative;padding-bottom:15%;padding-top:15%">
                         <p class="description-body"><span class="badge">
                             <i class="fas fa-map-marker-alt"></i> {{photo.location.city}}, {{photo.location.country}}
                         </span></p>
-                        <!-- <p>Category ~ {{photo.categories.name}}</p> -->
+                        <p>Category ~ {{photo.categories.name}}</p>
                         <p>uploaded {{photo.post_date | timesince}} ago</p>
                         <p><span id="photo{{photo.id}}" hidden>{{photo.image.cdn_url}}</span>
                         <button onclick="copyToClipboard('photo{{photo.id}}')" class="btn no-border text-black">Copy link <i class="far fa-copy"></i></button>

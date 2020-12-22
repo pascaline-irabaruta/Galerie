@@ -29,7 +29,7 @@
                         <p class="description-body"><span class="badge">
                             <i class="fas fa-map-marker-alt"></i> {{photo.location.city}}, {{photo.location.country}}
                         </span></p>
-                        <!-- <p>Category ~ {{photo.categories.name}}</p> -->
+                        <p>Category ~ {{photo.categories.name}}</p>
                         <p>uploaded {{photo.post_date | timesince}} ago</p>
                         <p><span id="photo{{photo.id}}" hidden>{{photo.image.cdn_url}}</span>
                         <button onclick="copyToClipboard('photo{{photo.id}}')" class="btn no-border text-black">Copy link <i class="far fa-copy"></i></button>
