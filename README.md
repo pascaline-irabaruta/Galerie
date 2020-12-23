@@ -17,14 +17,15 @@ Galerie is a personal gallery application that you display photos for others to 
 
 
 ## Technologies Used
-* Python 3.7.4
-* Django 1.11.23
+* Python
+* Django 
 * SQLite3
+* Postgres database
 * HTML5  
 * CSS3
 * Javascript
-* jQuery 3.4.1
-* Bootstrap 4.3.1
+* jQuery
+* Bootstrap4
 * Google Font API
 
 ## Requirements
@@ -53,7 +54,7 @@ You can reach out to me through:
 * pascyirabaruta456@gmail.com
 
 ## Live Site link
-You can view the live application by following this (https://ira-gallery.herokuapp.com/).
+You can view the live application by following this https://ira-gallery.herokuapp.com/.
 
 ## License
 #### [*MIT License*](LICENSE)
