@@ -31,7 +31,7 @@
                         </span></p>
                         <p>Category ~ {{photo.categories.name}}</p>
                         <p>uploaded {{photo.post_date | timesince}} ago</p>
-                        <p><span id="photo{{photo.id}}" hidden>{{photo.image.cdn_url}}</span>
+                        <p><span id="photo{{photo.id}}" hidden>https://ira-gallery.herokuapp.com/media/{{photo.image.url}}</span>
                         <button onclick="copyToClipboard('photo{{photo.id}}')" class="btn no-border text-black">Copy link <i class="far fa-copy"></i></button>
                         </p>
                       </div>

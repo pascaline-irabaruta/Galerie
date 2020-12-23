@@ -27,8 +27,8 @@
                     <div class="row no-gutters">
                         {%for photo in photos%}
                         <div class="col-md-6 item zoom-on-hover">
-                            <a class="lightbox" href="http://127.0.0.1:8000/media/{{photo.image}}" data-toggle="modal" data-target="#{{photo.id}}" data-caption="{{photo.name}}: {{photo.description}}">
-                                <img class="img-fluid image" src="http://127.0.0.1:8000/media/{{photo.image}}">
+                            <a class="lightbox" href="{{photo.image.url}}" data-toggle="modal" data-target="#{{photo.id}}" data-caption="{{photo.name}}: {{photo.description}}">
+                                <img class="img-fluid image" src="{{photo.image.url}}">
 
                             </a>
                             <div class="modal fade bd-example-modal-lg" id="{{photo.id}}" tabindex="1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="background-color:transparent;">
