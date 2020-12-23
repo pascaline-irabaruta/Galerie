@@ -1,6 +1,6 @@
-
-
-####  A photo gallery web application.
+# Galerie 
+## Description
+Galerie is a personal gallery application that you display photos for others to see.
 
 ## User Story
 * User can view all photos on index page ordered by the date they were posted
@@ -14,8 +14,7 @@
 ## Author
 [Pascaline Irabaruta](https://github.com/pascaline-irabaruta)
 
-## Description
-A photo gallery web application made using Django.
+
 
 ## Technologies Used
 * Python 3.7.4
