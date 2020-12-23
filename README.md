@@ -6,8 +6,7 @@
 * User can view all photos on index page ordered by the date they were posted
 * Hovering on an image will reveal more information about it; the title, description, location and time posted.
 * User can click on the copy button on an image to copy its url for sharing purposes
-* Clicking an image will toggle a lightbox with an expanded view of the image
-* User can navigate to other images while on the lightbox view.
+* Clicking an image will toggle a modal with an expanded view of the image
 * User can search photos based on their categories
 * User can browse photos based on the location they were taken
 
@@ -34,16 +33,11 @@ A photo gallery web application made using Django.
 * Once python is installed, install the folowing external libraries provided in the requirements.txt file using pip
 * Example:
     * **`pip install django==1.11**
-* This project requires you to have a secret key from Uploadcare to facilitate cloud storage of uploaded images.
-    * The secret key can be gotten by creating a free uploadcare account, starting a new project and navigating to the dashboard
-    * The key should be stored as an environmental variable in an .env file as shown below
-        * **`SECRET=<your secret key here>`**
-    * More info on how to use the Django pyuploadcare library can be found [here](https://uploadcare.com/docs/guides/django/)
 
 ## Installation and Set-up
 To view the app, open the live site link provided below on the README.
 Here is a run through of how to set up the application:
-* **Step 1** : Clone this repository using **`git clone https://github.com/collinsmuriuki/dazzle.git`**, or downloading a ZIP file of the code.
+* **Step 1** : Clone this repository using **`git clone https://github.com/pascaline-irabaruta/Galerie.git`**, or downloading a ZIP file of the code.
 * **Step 2** : The repository, if downloaded as a .zip file will need to be extracted to your preferred location and opened
 * **Step 3** : Go to the project root directory and install the virtualenv library using pip an afterwards create a virtual environment. Run the following commands respectively:
     * **`pip install virtualenv`**
@@ -60,7 +54,7 @@ You can reach out to me through:
 * pascyirabaruta456@gmail.com
 
 ## Live Site link
-You can view the live application by following this [link](https://ira-gallery.herokuapp.com/).
+You can view the live application by following this (https://ira-gallery.herokuapp.com/).
 
 ## License
 #### [*MIT License*](LICENSE)
