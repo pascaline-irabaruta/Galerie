@@ -72,11 +72,11 @@ TEMPLATES = [
     },
 ]
 
-from decouple import config
-UPLOADCARE = {
-    'pub_key': '123456789',
-    'secret': config("SECRET"),
-}
+# from decouple import config
+# UPLOADCARE = {
+#     'pub_key': '123456789',
+#     'secret': config("SECRET"),
+# }
 
 WSGI_APPLICATION = 'gallery_project.wsgi.application'
 
